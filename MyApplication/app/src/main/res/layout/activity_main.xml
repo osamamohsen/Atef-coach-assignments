@@ -6,65 +6,72 @@
     android:layout_height="wrap_content"
     tools:context="com.example.osama.myapplication.MainActivity">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/main"
         android:layout_width="fill_parent"
+        android:orientation="vertical"
         android:layout_height="fill_parent" >
 
-        <TextView
-            android:id="@+id/txtView"
+
+        <TableLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:text="Text will Be Here"
-            android:textColor="#000"
-            android:textSize="25sp"
-            android:textStyle="normal" />
-
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="50dp"
-            android:background="@android:drawable/editbox_background"
-             />
-
-        <!--<TextView-->
-            <!--android:id="@+id/txtView2"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/username_input"-->
-            <!--android:paddingLeft="15dp"-->
-            <!--android:paddingTop="15dp"-->
-            <!--android:text="password"-->
-            <!--android:textColor="#a5d4e2"-->
-            <!--android:textSize="25sp"-->
-            <!--android:textStyle="normal" />-->
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="120dp"
-            android:background="@android:drawable/editbox_background"
-            />
-
-
-        <Button
-            android:id="@+id/clickBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="170dp"
-            android:text="   Click Me   "
-            android:textSize="18sp" >
-        </Button>
-
-    </RelativeLayout>
+            android:layout_height="wrap_content" >
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txtView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Text will Be Here"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="50dp"
+                    android:hint="@string/txt"
+                    android:background="@android:drawable/editbox_background"
+                    />
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@android:drawable/editbox_background"
+                    />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Click Me   "
+                    android:textSize="18sp" >
+                </Button>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/nextPage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Next Assignment   "
+                    android:textSize="18sp" >
+                </Button>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
