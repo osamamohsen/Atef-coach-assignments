@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".layout_2_second"></activity>
+        <activity android:name=".layout_2_second" />
+        <activity android:name=".layout_3_third"></activity>
     </application>
 
 </manifest>
