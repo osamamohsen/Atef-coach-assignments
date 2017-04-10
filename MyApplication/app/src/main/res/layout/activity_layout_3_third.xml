@@ -24,14 +24,23 @@
             android:textSize="20px"
             />
 
-        <ImageView
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/festival1"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/circle"-->
+            <!--/>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/imageView"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher_round"
             android:src="@drawable/festival1"
-            android:layout_gravity="center"
-            />
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
         <EditText
             android:id="@+id/textImage"
             android:layout_width="fill_parent"
@@ -44,6 +53,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <Button
+            android:id="@+id/nextPage"
+            android:text="Next Page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
